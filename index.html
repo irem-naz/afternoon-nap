@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afternoon Nap - Official Film</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="burger" id="burger" aria-label="Toggle navigation" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <!-- <li><a href="#about" class="nav-link">About</a></li> -->
+            <li><a href="#film" class="nav-link">Film</a></li>
+            <li><a href="#vs" class="nav-link">Cast Member</a></li>
+            <li><a href="#ratingSection" class="nav-link">Rate</a></li>
+            <li><a href="#team" class="nav-link">Team</a></li>
+        </ul>
+    </nav>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <!-- Main Content Section -->
+    <div class="container" id="home">
+        <div class="main-content">
+            <div class="left-section">
+                <div class="content">
+                    <h1 class="main-title">AFTERNOON NAP</h1>
+                    
+                    <div class="production-info">
+                        A SHORT FILM PRODUCTION<br>
+                        in collaboration with NAZ • MAHLET • ROOMMATES
+                    </div>
+                    
+                    <div class="credits">
+                        <div class="credits-row">
+                            <span class="bold">Cast:</span> MAHLET • NAZ
+                        </div>
+                        <div class="credits-row">
+                            <span class="bold">Director:</span> Afra
+                        </div>
+                        <div class="credits-row">
+                            <span class="bold">Producer:</span> Iqra
+                        </div>
+                        <div class="credits-row">
+                            <span class="bold">Editor:</span> Naz
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-section" id="about">
+                <div class="info-card">
+                    <h2 class="about-title">About</h2>
+                    
+                    <!-- <div class="trailer-section" id="trailer">
+                        <div class="trailer-thumbnail">
+                            OFFICIAL<br>TRAILER
+                        </div>
+                        <div class="trailer-info">
+                            <h3>Afternoon Nap | Official Trailer</h3>
+                            <span class="trailer-duration">2:15</span>
+                        </div>
+                    </div> -->
+                    
+                    <div class="ratings-section">
+                        <div class="rating-item">
+                            <div class="rating-score">7.6/10</div>
+                            <div class="rating-source">IMDb</div>
+                        </div>
+                        <div class="rating-item">
+                            <div class="rating-score">8.1/10</div>
+                            <div class="rating-source">Watch Docum...</div>
+                        </div>
+                        <div class="rating-item">
+                            <div class="rating-score">78%</div>
+                            <div class="rating-source">Metacritic</div>
+                        </div>
+                    </div>
+                    
+                    <div class="google-rating">
+                        <div>
+                            <div class="google-rating-text"><strong>93% liked this film</strong></div>
+                            <div class="google-rating-subtitle">Google users</div>
+                        </div>
+                        <div class="thumbs">
+                            <div class="thumb"><i class="fas fa-thumbs-up"></i></div>
+                            <div class="thumb"><i class="fas fa-thumbs-down"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="description">
+                        A story about Mahlet, a meticulous and slightly perfectionist roommate, who takes an afternoon nap on a Wednesday morning. As she drifts between dreams and reality, her relationship with her laid-back roommate Naz is tested through a series of small, everyday moments that blur the line between what's real and what's imagined.
+                    </div>
+                    
+                    <div class="movie-details">
+                        
+                        
+                        <div class="detail-item">
+                            <span class="detail-label">Genre:</span> 
+                            <span class="detail-value">Drama, Psychological</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Setting:</span> 
+                            <span class="detail-value">Shared Apartment</span>
+                        </div>
+                    </div>
+                    
+                    <div class="watch-section">
+                        <h3 class="watch-title">Watch movie</h3>
+                        <div class="watch-header">
+                            <span class="available-text">Available on</span>
+                            <span class="edit-services">EDIT SERVICES</span>
+                        </div>
+                        
+                        <div class="platform">
+                            <div class="platform-info">
+                                <div class="platform-name">Netflix</div>
+                                <div class="platform-type">Subscription</div>
+                            </div>
+                            <button class="watch-btn" id="watchBtnNetflix">
+                                ▶ Watch
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="video-section" id="film">
+            <h2 id="videoTitle" class="video-title">Interactive Story Experience</h2>
+            <div class="interactive-video-container">
+                <div class="video-ui-area" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="video-wrapper" style="position: relative; display: inline-block; width: 100%; max-width: 800px; height: 600px;">
+                        <iframe id="storyVideo" width="800" height="600" src="https://www.youtube.com/embed/Ue-5AZW6b30?enablejsapi=1" frameborder="0" allowfullscreen style="border-radius: 15px; max-width: 100%; width: 100%; height: 100%; display: block;"></iframe>
+                        <div id="choiceArea" class="choice-area-overlay" style="display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2;">
+                            <div class="choice-content-overlay">
+                                <h3 class="choice-title">What would you do?</h3>
+                                <div class="choice-options">
+                                    <button id="choice1" class="choice-btn" onclick="makeChoice('text')">
+                                        <span class="choice-text">Text Her</span>
+                                    </button>
+                                    <button id="choice2" class="choice-btn" onclick="makeChoice('clean')">
+                                        <span class="choice-text">Clean It Yourself</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="backButton" class="back-button" style="display: none; position: absolute; top: 20px; left: 20px; z-index: 3;">
+                            <button id="backBtn" class="back-btn" onclick="goBack()">
+                                <span class="back-text">← Back</span>
+                            </button>
+                        </div>
+                        <div id="restartSection" class="restart-section" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 4;">
+                            <button id="restartBtn" class="restart-btn" onclick="restartStory()">
+                                <span class="restart-text">Watch Again</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- VS Section Start -->
+        <section class="vs-profile-section" id="vs">
+            <h2 class="vs-title">The Cast Who Helped Us Make This Into Reality</h2>
+            <div class="vs-cards-wrapper">
+                <div class="vs-profile-card vs-profile-left">
+                    <div class="vs-profile-img-rect" style="background: none; padding: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                        <img src="Images/fighter_01.jpg" alt="Mahlet - Roommate" style="width: 100%; height: auto; display: block; border-top-left-radius: 48px; border-top-right-radius: 48px;">
+                    </div>
+                    <div class="vs-profile-info-rect">
+                        <div class="vs-profile-name-rect">Mahlet - Roommate</div>
+                        <div class="vs-profile-quote-rect">The one who likes everything neat and planned. She's the "let's get this done right" type — always noticing the little things and keeping things organized, even when it drives her a bit crazy.</div>
+                    </div>
+                </div>
+                <div class="vs-profile-center-rect">
+                    <div class="vs-profile-vs-rect">VS</div>
+                </div>
+                <div class="vs-profile-card vs-profile-right">
+                    <div class="vs-profile-img-rect" style="background: none; padding: 0; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                        <img src="Images/fighter_02.jpg" alt="Naz - Roommate" style="width: 100%; height: auto; display: block; border-top-left-radius: 48px; border-top-right-radius: 48px;">
+                    </div>
+                    <div class="vs-profile-info-rect">
+                        <div class="vs-profile-name-rect">Naz - Roommate</div>
+                        <div class="vs-profile-quote-rect">The laid-back, easygoing roommate who forgets stuff... a lot. She's all about going with the flow and keeping things chill, even if that means leaving a coffee cup where it doesn't belong.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VS Section End -->
+        
+        <div class="rating-section rating-normal" id="ratingSection">
+            <div class="rating-content">
+                <h2 id="ratingTitle" class="rating-title">Rate Afternoon Nap</h2>
+                <p class="rating-subtitle">How did you find this cinematic masterpiece?</p>
+                
+                <div class="rating-face">
+                    <div class="face-eyebrows">
+                        <div class="eyebrow"></div>
+                        <div class="eyebrow"></div>
+                    </div>
+                    <div class="face-eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="face-mouth"></div>
+                </div>
+                
+                <div class="rating-text" id="ratingText">NORMAL</div>
+                
+                <div class="rating-slider-container">
+                    <input 
+                        type="range" 
+                        min="0" 
+                        max="100" 
+                        value="50" 
+                        class="rating-slider" 
+                        id="ratingSlider"
+                        oninput="updateRating(this.value)"
+                    >
+                    <div class="rating-labels">
+                        <span>Terrible</span>
+                        <span>Amazing</span>
+                    </div>
+                </div>
+                
+                <button class="submit-rating" onclick="submitRating()">Submit Rating</button>
+            </div>
+        </div>
+        
+        <!-- Thank You Message -->
+        <div id="thankYouMessage" class="thank-you-message">
+            Thank you for your rating! 🎬
+        </div>
+        
+        <div class="team-section" id="team">
+            <h2 class="team-title">Behind the Scenes</h2>
+            <p class="team-subtitle">Discover the creative minds and stories behind Afternoon Nap's powerful narrative</p>
+            <div class="team-bg-elements">
+                <div class="bg-circle-large bg-circle-1"></div>
+                <div class="bg-circle-large bg-circle-2"></div>
+                <div class="bg-circle-large bg-circle-3"></div>
+            </div>
+            <div class="team-content">
+                <div class="team-flex-row">
+                    <div class="floating-cards-grid">
+                        <div class="floating-story-card card-1">
+                            <img class="card-image" src="Images/Iqra.jpg" alt="Iqra" />
+                            <div class="card-text-overlay">
+                                <div class="card-category"><span>IQRA</span></div>
+                                <div class="card-title">Web Designer and Developer</div>
+                                <div class="card-details">
+                                    Senior | Class of 2026<br>
+                                    Double Major: Interactive Media &amp; Psychology<br>
+                                    ib2419@nyu.edu
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-story-card card-2">
+                            <img class="card-image" src="Images/Mahlet.jpg" alt="Mahlet" />
+                            <div class="card-text-overlay">
+                                <div class="card-category"><span>MAHLET</span></div>
+                                <div class="card-title">Webdeveloper &amp; Actor</div>
+                                <div class="card-details">
+                                    Senior | Class of 2026<br>
+                                    Major: Computer Science &amp; Mathematics<br>
+                                    ma7030@nyu.edu
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-story-card card-3">
+                            <img class="card-image" src="Images/Naz.jpg" alt="Naz" />
+                            <div class="card-text-overlay">
+                                <div class="card-category"><span>NAZ</span></div>
+                                <div class="card-title">Editor, Camera &amp; Actor</div>
+                                <div class="card-details">
+                                    Senior | Class of 2025<br>
+                                    Major: Computer Engineering<br>
+                                    ic2268@nyu.edu
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-story-card card-4">
+                            <img class="card-image" src="Images/Afra.jpg" alt="Afra" />
+                            <div class="card-text-overlay">
+                                <div class="card-category"><span>AFRA</span></div>
+                                <div class="card-title">Cast</div>
+                                <div class="card-details">
+                                    Senior | Class of 2027<br>
+                                    Major: Interactive Media &amp; Design<br>
+                                    aab8407@nyu.edu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-cards-right">
+                        <div class="embedded-video">
+                            <iframe width="350" height="200" src="https://www.youtube.com/embed/dDq5O2Q4oHg" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+    // Burger menu toggle
+    const burger = document.getElementById('burger');
+    const navbar = document.getElementById('navbar');
+    const menuOverlay = document.getElementById('menuOverlay');
+
+    function closeNavMenu() {
+        navbar.classList.remove('open');
+        menuOverlay.classList.remove('show');
+    }
+
+    burger.addEventListener('click', () => {
+        navbar.classList.toggle('open');
+        menuOverlay.classList.toggle('show');
+    });
+    burger.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            navbar.classList.toggle('open');
+            menuOverlay.classList.toggle('show');
+        }
+    });
+    menuOverlay.addEventListener('click', closeNavMenu);
+
+    // Close menu when a nav link is clicked (mobile)
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Only do this on mobile
+            if (window.innerWidth <= 700) {
+                e.preventDefault();
+                closeNavMenu();
+                // Scroll after menu closes
+                setTimeout(() => {
+                    window.location.hash = this.getAttribute('href');
+                }, 10);
+            }
+        });
+    });
+    </script>
+</body>
+</html>
