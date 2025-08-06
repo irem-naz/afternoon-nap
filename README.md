@@ -70,6 +70,7 @@ This project blends traditional filmmaking with interactive web storytelling. Bu
 │ ├── Mahlet.jpg
 │ └── Naz.jpg
 └── Videos/ # Video content
+```
 
 ## 🎬 Interactive Video Navigation
 
