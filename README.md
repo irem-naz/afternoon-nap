@@ -59,6 +59,7 @@ This project blends traditional filmmaking with interactive web storytelling. Bu
 
 ## 📁 Project Structure
 
+```bash
 .
 ├── index.html # Main HTML file
 ├── style.css # Stylesheet
